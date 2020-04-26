@@ -1,0 +1,863 @@
+
+/* @group globales */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color:#7a838e;
+  -webkit-font-smoothing: antialiased
+}
+.nivel {
+	margin: 0 0 3%; 
+}
+.container {
+	width:1200px;
+	margin: 0 auto;
+}
+.contenido {
+	font-size:80%;
+}
+
+
+/* @group text */
+a {
+	color:#023D4C;
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color:#001837;
+}
+h1 {
+	font-size: 24px;
+	padding: 15px 0 10px 0;
+}
+
+h2 a {
+	border-bottom: 1px dotted #000;
+}
+h3 a {
+	color:#666;
+}
+
+/* @end text */ 
+
+/* @end globales */
+
+/* @group header */
+.header {
+  border-bottom: 1px solid #dee3ef;
+  margin: 0 0 3% 0;
+  background-color: #80c242;
+  color: #fff;
+}
+.header {
+  position: relative;
+}
+.header h1 {
+  margin: 0;
+  padding: .6em 1em .4em;
+}
+.header h1 a, .logo-footer {
+  text-decoration:none;
+  display:block;
+  background: url(../img/hanna-logo-web.svg);
+  background-repeat: no-repeat;
+  width: 77px;
+  height: 34px;
+  text-indent: -9999em;
+  outline:none;
+}
+.logo-footer {
+  background: url(../img/hanna-logo-web-green.svg);
+}
+.header a, 
+.header a:hover, 
+.header a:visited {
+  color: #fff;
+}
+
+.whatsAppNumber {
+  position: absolute;
+  top: .3em;
+  right: 2em;
+  font-size: 1.2em;
+  margin: .8em 0;
+}
+
+/* @end header */
+
+/* @group botones */
+
+
+@-webkit-keyframes link-main {
+    100% {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes link-main {
+    100% {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 1;
+    }
+}
+
+
+.link-main,
+.btn-main {
+  background: #0D8547;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: .8em 1.2em;
+  border: none;
+  display: inline-block;
+  /*vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);*/
+  /*box-shadow: 0 0 1px rgba(0, 0, 0, 0);*/
+  position: relative;
+}
+
+.link-main:before,
+.btn-main:before {
+    content: '';
+    position: absolute;
+    border: rgba(244, 54, 76, .4) solid 4px;
+    border-radius: 5px;
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+}
+
+.link-main:hover:before, .link-main:focus:before, .link-main:active:before,
+.btn-main:hover:before, .btn-main:focus:before, .btn-main:active:before {
+    -webkit-animation-name: link-main;
+    animation-name: link-main;
+}
+
+/* @end botones */
+
+/* @group footer */
+
+.footer {
+  padding: 0;
+  font-size: 1.2em;
+  
+}
+.footer .container-content {
+  padding: 0;
+}
+.footer .a, .footer .b {
+  margin-right: 2em;
+}
+
+.footer .whatsAppNumber {
+  position: static;
+  font-size: 1em;
+  margin: .7em 0;
+}
+.ubicacion {
+  margin: .7em 0;
+}
+/* @end footer */
+
+/* @group niveles */
+
+
+/* @group promo */
+
+.promo .container-block {
+  height: 542px;
+  border-radius: 10px;
+  border: 1px solid #dee3ef;
+  background-color: #fff;
+  position: relative;
+}
+
+.promo img {
+  float: right;
+  margin: 0 -20px 0 0;
+}
+.promo .a {
+  width: 40%;
+  margin: 3% 0 0 3%;
+  padding: 12px;
+  position: absolute;
+  top:0;
+}
+.promo h2 {
+ font-size: 1.5em;
+}
+.promo p {
+  font-size: 1.5em;
+}
+/* @end promo */
+
+/* @group cotizar */
+
+
+.cotizar {
+  color: #fff;
+  background-color: rgba(51, 102, 255, 1);
+}
+.cotizar .content {
+  position: relative;
+  display: block;
+  min-height: 80vh;
+  overflow: visible;
+}
+.cotizar h2 {
+  color: #fff;
+}
+.cotizar .header {
+  border-bottom: 1px solid #dee3ef;
+  margin: 0;
+}
+.cotizar .header h1 {
+  margin-left: .5em;
+}
+.cotizar .header .whatsAppNumber {
+  margin-right: .5em;
+}
+.cotizar .header a, .cotizar .footer a {
+  color:#fff;
+}
+.cotizar .header h1 a, .cotizar .logo-footer {
+  background-image: url(../img/logo-lap-seguros-blanco.svg);
+}
+.cotizar .logo-footer {
+  margin-left: 10px;
+}
+.cotizar .footer {
+  padding: 2em 0 0 0;
+}
+
+.opciones {
+  margin: 0;
+  border-bottom: 1px solid #fff;
+}
+.opciones .container-block {
+  overflow: visible;
+  height: 92vh;
+  position: relative;
+}
+.opciones .block  {
+  position: relative;
+  display: inline-block;
+  width: 41%;
+  float: none;
+  padding: 0 4%;
+  height: 92vh;
+  overflow: visible;
+}
+.opciones .block.a {
+  border-right: 1px solid #fff;
+  z-index: 2;
+}
+.opciones h3 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #fff;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  margin-top: 0;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 420px;
+}
+
+.opciones a {
+  transition: color 0.3s ease;
+  color: rgba(256, 256, 256, 0.6);
+}
+.opciones a:hover {
+  transition: color 0.5s ease;
+  color: #fff; 
+}
+/* @group form-cotizar */
+
+.form-cotizar {
+  font-size: 2em;
+}
+.title-form {
+  font-size: .6em;
+}
+.form-cotizar .a {
+  float: none;
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+  margin: 8% auto ;
+  padding: 12px;
+}
+.form-sentence {
+  padding: 0 0 10px;
+  position: relative;
+}
+.ocultar {
+  display: none;
+}
+.wrap-select {
+  border-bottom: 0.1em solid;
+  position: relative;
+  line-height: 1.1;
+  display: inline-block;
+  white-space: nowrap;
+  box-sizing: inherit;
+  cursor: default;
+}
+.form-cotizar select {
+  background-color: transparent;
+  border-radius: 0;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1;
+  padding: 2.5em 0;
+  margin:0;
+  /*opacity: 0;
+  outline: 0;*/
+/*  position: absolute;
+  width: 100%;*/
+}
+.form-cotizar input {
+  color: #fff !important;
+  background: transparent !important;
+  border:none;
+  border-bottom: 0.1em solid #fff;
+}
+.input-edad {
+  width: 70px;
+  text-align: center;
+}
+.input-invertir {
+  width: 200px;
+}
+.input-mail {
+  width: 380px;
+}
+.btn-main {
+  background-color: #fff;
+  color: rgba(51, 102, 255, 1);
+  padding: 20px 50px;
+  font-size: .8em;
+  cursor: pointer;
+  outline: none;
+}
+.btn-main:before {
+    border: rgba(256, 256, 256, .4) solid 4px;
+}
+.form-sentence-button { 
+  padding: 20px 0;
+}
+
+
+.input-numero-hijos {
+  width: 50px;
+}
+#messages {
+  color: #000;
+  font-size: 0.75em;
+  font-weight: bold;
+  margin:0;
+  padding: 0;
+}
+#messages li {
+  list-style: none;
+}
+
+/* @end form-cotizar */
+
+/* @end cotizar */
+
+/* @group beneficios */
+
+.beneficios, .asesoria {
+  text-align: center; 
+}
+.beneficios .block {
+    width: 31.7%;
+    margin: 0 0 0 2.333%;
+}
+
+.beneficios img {
+  width: 100%;
+}
+
+.beneficios .content-block {
+  border: 1px solid #dee1e5;
+  border-radius: 10px;
+  padding: 0 5% 0 5%;
+}
+.beneficios .block.a, .asesoria .block.a {
+  margin: 0 0 0 0;
+}
+.beneficios .block.a img, 
+.beneficios .block.c img{
+  position: relative;
+  margin: 0 0 -4px 0;
+}
+
+.beneficios .block.b img {
+  margin: 31px 0;
+}
+
+.beneficios .block.d .content-block {
+  border: none
+}
+
+/* @end beneficios */
+
+/* @group asesoria */
+
+.asesoria .container-block {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #dee1e5;
+}
+
+.asesoria .block {
+  width: 14%;
+  margin: 0 0 0 0.32%;
+}
+
+.asesoria .block.h,
+.coberturas .block.b,
+.beneficios .block.d {
+  width: 100%;
+  padding: 1.5em 0 1.5em 0;
+}
+.asesoria img {
+  width: 50%;
+}
+
+/* @end asesoria */
+
+/* @group companias */
+.companias .container-block {
+  border-bottom: 1px solid #dee1e5;
+  padding: 0 20px 30px;
+}
+.companias .block.a {
+  width: 50%;
+}
+.companias .block.a p, 
+.companias .block.a ul {
+  font-size: 1.5em;
+}
+.companias .block.a ul {
+  line-height: 140%;
+}
+.companias .content-block {
+  padding: 10px; 
+}
+.companias .block.b {
+  width: 50%;
+}
+.companias .block.c {
+  width: 100%;
+}
+.companias .block.c {
+  text-align: center;
+}
+
+.logos-companias {
+  overflow: hidden;
+  padding: 4em 0 0 3em;
+}
+
+.logos-companias li {
+  list-style: none;
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 40%;
+  margin: 0 9% 2% 0;
+}
+.logos-companias li.logo-sura {
+  width: 34%;
+  margin: 0 12% 4% 2%;
+}
+
+/* @end companias */
+
+/* @group experiencia */
+.experiencia .container-block {
+  border-bottom: 1px solid #dee1e5;
+  padding: 0 0 30px;
+}
+.experiencia .block {
+  width: 70%;
+  margin: 0 auto;
+  float: none;
+  display: block;
+}
+
+/* @end experiencia */ 
+
+/* @group coberturas */
+.coberturas {
+  text-align: center;
+}
+.coberturas .block.a {
+  width: 100%;
+}
+.coberturas .block.b {
+  text-align: center;
+}
+.coberturas table {
+  margin: 0 auto;
+}
+/* @end coberturas */
+
+/* @group call-to-action */
+.call-to-action {
+  text-align: center;
+  padding: 1em 0 1em;
+}
+/* @end call-to-action */
+
+/* @group video-nivel */
+.video-nivel {
+  background: #EFF3F4;
+}
+.video-nivel .block.a {
+  text-align: center;
+  width: 100%;
+}
+.video-nivel .block.a .content-block {
+  padding: 0 250px;
+}
+.video-nivel iframe {
+  width: 560px;
+  height: 315px;
+}
+.resumen-video {
+  font-size: 1.5em;
+}
+
+/* @end video-nivel */
+
+/* @group tables */
+table {
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+td, th {
+  /*border-collapse: collapse;*/
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  text-align: center;
+}
+th {
+  padding: 10px 15px;
+}
+tbody th {
+  text-align: left;
+}
+
+.insurance-overview {
+  text-align: left;
+}
+
+.icon-sm-include:before { color: #34a853; } 
+.icon-sm-not-include:before { color: #b7b7b7; } 
+.icon-sm-add:before { color: #fbbc05; } 
+
+.icon-sm-include,
+.icon-sm-not-include,
+.icon-sm-add {
+  border: none;
+  font-size: 2em;
+}
+
+/* @end tables */
+
+/* @group beneficios-nivel */
+.beneficios-nivel {
+  display: flex;
+}
+.beneficios-nivel .block {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+/* @end beneficios-nivel */
+
+/* @end nivels */
+
+.media-o {
+  display: flex;
+  align-items: flex-start;
+}
+
+.media-o-figure {
+  margin-right: 1em;
+}
+
+.media-o-body {
+  flex: 1;
+}
+
+/*==========  Non-Mobile First Method  ==========*/
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1024px) {
+  .container {
+    width: 90%;
+  }
+  .promo .container-block {
+    height: 400px;
+  }
+  
+
+  .promo p {
+    font-size: 1em;
+  }
+  .promo img {
+    margin-right: -100px;
+    /*width: 700px;*/
+  }
+
+  .video-nivel .block.a .content-block {
+    padding: 0 100px;
+  }
+
+  .beneficios .block.b img {
+    margin: 25px 0;
+  }
+  .beneficios .block.c img {
+    margin: -11px 0 -10px 0;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .container {
+    width: 90%;
+  }
+  .promo .container-block {
+    border-radius: 5px;
+    height: 270px;
+  }
+  .promo .a {
+    width: 40%;
+    margin: 0 0px 0px 2%;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+
+  .promo p {
+    font-size: 1em;
+  }
+  .promo img {
+    width: 95%;
+    margin: 0 -60px 0;
+  }
+  .link-main {
+    font-size: .8em;
+  }
+  
+  .beneficios .block.b img {
+    margin: 33px 0;
+  }
+
+  .experiencia .block {
+    width: 80%;
+  }
+
+  .opciones .container-block {
+    width: auto;
+    height: auto;
+  }
+  .opciones .block {
+    width: 100%;
+    height: auto;
+    position: static;
+    padding: 0;
+
+  }
+  .cotizar .content {
+    height: auto; 
+    position: static;
+    min-height: auto;
+  }
+  .video-nivel .block.a .content-block {
+    padding: 0 50px;
+  }
+  .opciones h3 {
+    height: auto;
+    position: static;
+    left: auto;
+    margin: auto;
+    top: auto;
+    transform: none;
+    width: auto;
+  }
+  
+  .opciones a {
+    display: block;
+    padding: 3em 4em 3em;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+
+  }
+
+}
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+  .container {
+    width: 100%;
+  }
+  .header {
+    width: 100%;
+    margin: 0;
+  }
+
+  .header h1 {
+    padding: .4em 0 .4em .4em;
+  }
+  .header h1 a {
+    width: 119px;
+    height: 27px;
+  }
+  .whatsAppNumber {
+    font-size: 1em;
+    top: .2em;
+    right: 1em;
+  }
+  .promo .container-block {
+    border: none;
+    border-bottom: 1px solid #dee3ef;
+    height: auto;
+
+  }
+  .promo {
+    margin-top: 0; 
+  }
+  .promo .a {
+    position: static;
+    width: auto;
+    margin: 0 15px 15px;
+  }
+  .promo p {
+    font-size: 1em;
+  }
+  .promo img {
+    width: 120%;
+    margin: 0;
+  }
+  
+  .beneficios .block {
+    width: 100%;
+    margin: 0;
+  }
+  .beneficios .content-block {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #dee1e5;
+  }
+
+  .asesoria .block {
+    width: 33.333%;
+    margin: 0;
+  }
+  
+  .companias .block.a,
+  .companias .block.b {
+    width: 100%;
+  }
+  .logos-companias, .logos-companias li.logo-sura {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .logos-companias li.logo-sura {
+    width: 80%;
+  }
+  .coberturas {
+    overflow: auto;
+  }
+  .logos-companias li {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .logos-companias img {
+    width: 80%;
+  }
+  .experiencia .block {
+    width: 100%;
+  }
+  .video-nivel .block.a .content-block {
+    padding: 0 0;
+  }
+  .video-nivel iframe {
+    width: 320px;
+    height: 200px;
+  }
+  .footer {
+    padding: 20px 0 0 0;
+    text-align: center;
+
+  }
+  .footer .block {
+    width: 100%;
+  }
+  .ubicacion {
+    margin: 0 10px;
+  }
+  .logo-footer {
+    margin: 0 0 0 88px;
+  }
+  .companias .block.a p,
+  .companias .block.a ul,
+  .video-nivel p {
+    font-size: 1em;
+  }
+  .video-nivel p {
+    text-align: left;
+    padding: 0 2em 0;
+  }
+  .opciones h3 {
+    font-size: 1.5em;
+  }
+  .opciones a {
+    padding: 2em 1em 2em;
+  }
+  .logo-footer, 
+  .cotizar .logo-footer{
+    margin: 0 auto;
+  }
+  
+}
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+  
+}
